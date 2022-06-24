@@ -1,5 +1,7 @@
 * {
     box-sizing: border-box;
+    margin: 0;
+    font-family: roboto;
 }
 
 body {
@@ -22,7 +24,7 @@ header {
     color: #424242;
 }
 
-header p, div {
+header div {
     margin: 0px;
     display: inline-block;
 }
@@ -55,4 +57,40 @@ header > div > * {
 
 #search {
     margin-top: 10px;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 16px 16px 0 16px;
+}
+
+.content {
+    margin: 0 8px 40px 8px;
+}
+
+.thumbnail {
+    width: 300px;
+}
+
+.metadata span:first-child:after {
+    content: "·";
+}
+
+.details {
+    display: flex;
+    flex-direction: row;
+}
+
+.details img.user_logo {
+    margin: 10px 10px 0 0;
+    float: left;
+    width: 36px;
+    height: 36px;
+    border-radius: 100%;
+}
+
+.title {
+    font-size: 1rem;
+    margin: 12px 0 6px 0
 }
