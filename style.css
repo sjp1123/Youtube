@@ -38,7 +38,8 @@ header > div > * {
 }
 
 #login-box {
-    padding: 10px;
+    display:flex;
+    justify-content:space-evenly;
     width: 100px;
     height: 40px;
     border: 1px solid #065FD4;
