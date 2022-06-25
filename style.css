@@ -1,3 +1,5 @@
+/* 기본 세팅 */
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -5,12 +7,18 @@
 }
 
 body {
+    padding-top: 50px;
     margin: 0px;
 }
 
+/* 헤더 세팅 */
+
 header {
+    background-color: white;
+    position: fixed;
+    top: 0;
+    width: 100%;
     padding: 5px;
-    margin-top: 10px;
     border-bottom: 1px solid gray;
     display: flex;
     justify-content: space-between;
@@ -20,16 +28,29 @@ header {
     color: red;
 }
 
+#logo {
+    font-weight: bold;
+}
+
 .bar {
     color: #424242;
 }
 
 header div {
+    flex-grow: 1;
     margin: 0px;
     display: inline-block;
 }
 
-header > div.start{
+.center {
+    flex-grow: 2;
+}
+
+.center input {
+    width: 70%;
+}
+
+header > div.start {
     padding: 5px;
 }
 
@@ -38,18 +59,19 @@ header > div > * {
 }
 
 #login-box {
-    display:flex;
-    justify-content:space-evenly;
+    display: flex;
+    justify-content: space-evenly;
+    float: right;
     width: 100px;
     height: 40px;
-    border: 1px solid #065FD4;
+    border: 1px solid #065fd4;
     border-radius: 2px;
     align-items: center;
     text-align: center;
 }
 
 #login-box > * {
-    color: #065FD4;
+    color: #065fd4;
 }
 
 #bar {
@@ -60,6 +82,8 @@ header > div > * {
     margin-top: 10px;
 }
 
+/* 콘텐츠 */
+
 .container {
     display: flex;
     flex-wrap: wrap;
@@ -67,11 +91,13 @@ header > div > * {
 }
 
 .content {
+    flex-grow: 1;
     margin: 0 8px 40px 8px;
+    width: 250px;
 }
 
 .thumbnail {
-    width: 300px;
+    width: 100%;
 }
 
 .metadata span:first-child:after {
@@ -93,5 +119,5 @@ header > div > * {
 
 .title {
     font-size: 1rem;
-    margin: 12px 0 6px 0
+    margin: 12px 0 6px 0;
 }
